@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #228eb9;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #228eb9;
+      padding: 0.5rem;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    article {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #228eb9;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+      max-width: 100%; 
+    }
+    button{
+        font-size: 1em;
+        padding: 0.75em 1.25em;
+        align-self: center;
+        cursor: pointer;
+        outline: none;
+        color: #228eb9;
+        
+
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Website</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+  <section>
+    <article>
+      <h2>HTML</h2>
+      <img src="C:\Users\91866\Desktop\html.png" width="50px" alt="HTML Image">
+      <p>HTML, which stands for HyperText Markup Language, is the standard markup language used to create the structure and layout of web pages. It serves as the backbone of web content, providing a way to organize and format text, images, links, forms, and other elements on a webpage.</p>
+    </article>
+
+    <article>
+      <h2>CSS</h2>
+      <img src="C:\Users\91866\Desktop\css.png" width="50px" alt="CSS Image">
+      <p>CSS, or Cascading Style Sheets, is a stylesheet language used for describing the presentation and layout of HTML documents. It enables web developers to control the appearance of web pages, ensuring consistency and a polished design</p>
+    </article>
+
+    <article>
+      <h2>JAVASCRIPT</h2>
+      <img src="C:\Users\91866\Desktop\js.png" width="50px" alt="JS Image">
+      <p>
+        JavaScript, often abbreviated as JS, is a versatile programming language that plays a crucial role in web development. It is primarily used to enhance the interactivity and dynamic behavior of web pages.</p>
+    </article>
+  </section>
+  <button onclick="showAlert()">Click me</button>
+  <script>
+    function showAlert() {
+        alert('Button Clicked!');
+    }
+</script>
+
+  <footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+    
+  </footer>
+  
+
+</body>
+</html>

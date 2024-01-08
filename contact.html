@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #228eb9;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #228eb9;
+      padding: 0.5rem;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    article {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #228eb9;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+      max-width: 100%; 
+    }
+
+    @media (max-width:768px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Responsive Website</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+  <section>
+    <article>
+      <h2>CONTACT</h2>
+      
+      <p>+91 (123)-456-789</p>
+      <p>
+        <strong>Email:ranjirithika@gmail.com</strong><br /> </p>
+        <address>2nd street,XYZ colony,Coimbatore</address>
+    </article>
+
+</body>
+</html>
